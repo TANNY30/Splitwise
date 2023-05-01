@@ -1,7 +1,15 @@
 package org.java;
 
+import java.util.Scanner;
+
 public class Main {
+
+    public static Scanner keyboard = new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("Hello world! change sent 3rd time");
+        Generator generator = new Generator(keyboard);
+        //generator.mainLoop();
+        keyboard.close();
+
     }
 }
