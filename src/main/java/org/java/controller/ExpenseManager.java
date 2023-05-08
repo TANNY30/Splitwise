@@ -1,7 +1,7 @@
-package org.SplitWise.controller;
+package org.java.controller;
 
-import org.SplitWise.model.*;
-import org.SplitWise.service.ExpenseService;
+import org.java.model.*;
+import org.java.service.ExpenseService;
 
 import java.util.ArrayList;
 import java.util.HashMap;

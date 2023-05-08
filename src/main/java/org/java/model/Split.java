@@ -1,4 +1,4 @@
-package org.SplitWise.model;
+package org.java.model;
 
 public abstract class Split {
     private User user;

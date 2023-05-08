@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'org.SplitWise'
+group = 'org.java'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -17,3 +17,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+
+jar {
+    manifest {
+        attributes["Main-Class"] = "org.java.Main"
+    }
+
+}
+

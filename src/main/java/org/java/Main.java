@@ -1,20 +1,20 @@
-package org.SplitWise;
+package org.java;
 
-import org.SplitWise.controller.ExpenseManager;
-import org.SplitWise.model.EqualSplit;
-import org.SplitWise.model.ExpenseType;
-import org.SplitWise.model.Split;
-import org.SplitWise.model.User;
-import org.SplitWise.model.*;
+import org.java.controller.ExpenseManager;
+import org.java.model.EqualSplit;
+import org.java.model.ExpenseType;
+import org.java.model.Split;
+import org.java.model.User;
+import org.java.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    /*
+        There will be 3 types of input:
 
-<<<<<<< HEAD:src/main/java/org/SplitWise/Main.java
-=======
         Expense in the format: EXPENSE <user-id-of-person-who-paid> <Paid Amount> <no-of-users> <space-separated-list-of-users> <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal>
 
         Show balances for all: SHOW
@@ -22,14 +22,21 @@ public class Main {
         Show balances for a single user: SHOW <user-id>
          This is also included in README.md
      */
->>>>>>> 671b22e (Splitwise Bug Fixed):src/main/java/org/java/Main.java
 
     public static void main(String[] args) {
+
         ExpenseManager expenseManager=new ExpenseManager();
+
+
         expenseManager.addUser(new User("u1","User1","abs@email.com","978912439"));
         expenseManager.addUser(new User("u2","User2","asdc@email.com","908912889"));
         expenseManager.addUser(new User("u3","User3","loop@email.com","911112899"));
         expenseManager.addUser(new User("u4","User4","qpwle@email.com","978900899"));
+        System.out.println("There are 4 users u1 u2 u3 u4 registered.");
+        System.out.println("Command formats");
+        System.out.println("Expense in the format: EXPENSE <user-id-of-person-who-paid> <Paid Amount> <no-of-users> <space-separated-list-of-users> <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal>");
+        System.out.println("Show balances for all: SHOW \n Show balances for a single user: SHOW <user-id>");
+
         Scanner scanner=new Scanner(System.in);
         while(true){
             String command = scanner.nextLine();
@@ -45,7 +52,6 @@ public class Main {
 
                     }
                     break;
-
                 case "EXPENSE":
                     String PaidBy=commands[1];
                     Double amount = Double.parseDouble(commands[2]);
@@ -75,13 +81,14 @@ public class Main {
                     break;
             }
 
-                    }
-
-
-
-
         }
 
 
 
+
     }
+
+
+
+}
+

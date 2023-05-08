@@ -1,4 +1,4 @@
-package org.SplitWise.model;
+package org.java.model;
 
 import java.util.List;
 

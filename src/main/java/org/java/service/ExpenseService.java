@@ -1,6 +1,6 @@
-package org.SplitWise.service;
+package org.java.service;
 
-import org.SplitWise.model.*;
+import org.java.model.*;
 
 import java.util.List;
 

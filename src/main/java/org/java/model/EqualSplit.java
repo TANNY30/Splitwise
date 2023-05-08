@@ -1,4 +1,4 @@
-package org.SplitWise.model;
+package org.java.model;
 
 public class EqualSplit extends Split{
 
