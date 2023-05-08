@@ -13,6 +13,16 @@ import java.util.Scanner;
 
 public class Main {
 
+<<<<<<< HEAD:src/main/java/org/SplitWise/Main.java
+=======
+        Expense in the format: EXPENSE <user-id-of-person-who-paid> <Paid Amount> <no-of-users> <space-separated-list-of-users> <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal>
+
+        Show balances for all: SHOW
+
+        Show balances for a single user: SHOW <user-id>
+         This is also included in README.md
+     */
+>>>>>>> 671b22e (Splitwise Bug Fixed):src/main/java/org/java/Main.java
 
     public static void main(String[] args) {
         ExpenseManager expenseManager=new ExpenseManager();
