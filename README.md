@@ -14,3 +14,4 @@ Expense in the format: EXPENSE <user-id-of-person-who-paid> <Paid Amount> <no-of
 
 Show balances for all: SHOW
 Show balances for a single user: SHOW <user-id>
+
